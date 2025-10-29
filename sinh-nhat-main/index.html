@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Graduation</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Phần câu hỏi -->
+    <div id="quizSection">
+      <div class="quiz-container">
+        <h1>Đoán xem hôm nay là ngày gì nè? 🧐</h1>
+        <div class="options">
+          <button class="option" data-correct="false">
+            Ngày nói yêu Danh đẹp zai 👍
+          </button>
+          <button class="option" data-correct="false">
+            Ngày cho em danh 200k  ❤️
+          </button>
+          <button class="option" data-correct="true">
+            Ngày tốt nghệp ngừi đẹp 🥳
+          </button>
+        </div>
+        <div id="quizResult" class="hidden"></div>
+        <!-- Thêm phần tử cho thông báo lớn -->
+        <div id="quizMessage" class="hidden"></div>
+      </div>
+    </div>
+
+    <!-- Phần chúc mừng sinh nhật -->
+    <div id="birthdaySection" class="wrapper hidden">
+      <div class="flag__birthday">
+        <img
+          class="flag__left"
+          src="./images/flag.png"
+          alt="Cờ trang trí bên trái"
+        />
+        <img
+          class="flag__right"
+          src="./images/flag.png"
+          alt="Cờ trang trí bên phải"
+        />
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="title">
+            <div class="happy">
+              <span style="--t: 1s">H</span>
+              <span style="--t: 1.2s">a</span>
+              <span style="--t: 1.4s">p</span>
+              <span style="--t: 1.6s">p</span>
+              <span style="--t: 1.8s">y</span>
+            </div>
+            <img
+              class="hat animateHat"
+              src="./images/hat.png"
+              alt="Mũ sinh nhật"
+            />
+            <div class="birthday">
+              <span style="--t: 2s">G</span>
+              <span style="--t: 2.2s">r</span>
+              <span style="--t: 2.4s">a</span>
+              <span style="--t: 2.6s">d</span>
+              <span style="--t: 2.8s">u</span>
+              <span style="--t: 3s">a</span>
+              <span style="--t: 3.2s">t</span>
+              <span style="--t: 3.4s">i</span>
+              <span style="--t: 3.4s">o</span>
+              <span style="--t: 3.4s">n</span>
+            </div>
+          </div>
+          <div class="date__of__birth">
+            <span> 09-11-2025 </span>
+          </div>
+          <button id="btn__letter" class="btn">
+            <span>Bấm dô đây ik người đẹppp 😘</span>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="right">
+          <div class="box__account">
+            <div class="image">
+              <img src="images/hoa.jpg" alt="Ảnh linh" />
+            </div>
+            <div class="name">
+              <span>Đỗ Thị Hoa</span>
+            </div>
+          </div>
+          <div class="cricle">
+            <div class="text__cricle">
+              <span style="--i: 1">h</span>
+              <span style="--i: 2">a</span>
+              <span style="--i: 3">p</span>
+              <span style="--i: 4">p</span>
+              <span style="--i: 5">y</span>
+              <span style="--i: 6">-</span>
+              <span style="--i: 7">g</span>
+              <span style="--i: 8">r</span>
+              <span style="--i: 9">a</span>
+              <span style="--i: 10">d</span>
+              <span style="--i: 11">u</span>
+              <span style="--i: 12">a</span>
+              <span style="--i: 13">t</span>
+              <span style="--i: 14">i</span>
+              <span style="--i: 14">o</span>
+              <span style="--i: 14">n</span>
+              <span style="--i: 15">-</span>
+            </div>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+          </div>
+          <img
+            class="balloon_one"
+            src="./images/balloon1.png"
+            alt="Bóng bay 1"
+          />
+          <img
+            class="balloon_two"
+            src="./images/balloon2.png"
+            alt="Bóng bay 2"
+          />
+          <div class="day">06</div>
+          <div class="month">June</div>
+        </div>
+      </div>
+      <div class="decorate_star star1" style="--t: 10.2s"></div>
+      <div class="decorate_star star2" style="--t: 10.4s"></div>
+      <div class="decorate_star star3" style="--t: 10.6s"></div>
+      <div class="decorate_star star4" style="--t: 10.8s"></div>
+      <div class="decorate_star star5" style="--t: 11s"></div>
+      <img
+        class="decorate_bottom"
+        src="./images/decorate_bottom.png"
+        alt="Trang trí dưới"
+      />
+      <img
+        class="decorate_flower--one"
+        src="./images/decorate_flower.png"
+        alt="Hoa 1"
+        style="--t: 11.2s"
+      />
+      <img
+        class="decorate_flower--two"
+        src="./images/decorate_flower.png"
+        alt="Hoa 2"
+        style="--t: 11.4s"
+      />
+      <img
+        class="decorate_flower--three"
+        src="./images/decorate_flower.png"
+        alt="Hoa 3"
+        style="--t: 11.6s"
+      />
+      <img
+        class="smiley__icon"
+        src="./images/smiley_icon.png"
+        alt="Biểu tượng mặt cười"
+      />
+      <div class="box__letter">
+        <div class="letter__border">
+          <div class="close">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </div>
+          <div class="letter">
+            <div class="title__letter">
+              Gửi em ✨<i class="fa-solid fa-heart" aria-hidden="true"></i>
+            </div>
+            <div class="content__letter">
+              <div class="left">
+                <img
+                  id="heart__letter"
+                  src="./images/box.gif"
+                  alt="Trái tim lớn"
+                />
+                <img
+                  class="heart heart_1 animation"
+                  src="./images/heart.png"
+                  alt="Trái tim nhỏ 1"
+                  style="--t: 2s"
+                />
+                <img
+                  class="heart heart_2 animation"
+                  src="./images/heart.png"
+                  alt="Trái tim nhỏ 2"
+                  style="--t: 2.2s"
+                />
+                <img
+                  class="heart heart_3 animation"
+                  src="./images/heart.png"
+                  alt="Trái tim nhỏ 3"
+                  style="--t: 2.4s"
+                />
+                <img
+                  class="heart heart_4 animation"
+                  src="./images/heart.png"
+                  alt="Trái tim nhỏ 4"
+                  style="--t: 2.6s"
+                />
+              </div>
+              <div class="right">
+                <img
+                  class="love__img"
+                  src="./images/sun.gif"
+                  alt="Hình ảnh yêu thương"
+                />
+                <div class="text__letter"></div>
+                <img id="mewmew" src="./images/mewmew.gif" alt="Hình ảnh mèo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="correctSound" src="./music/jack.mp3" loop></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
